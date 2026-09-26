@@ -1,0 +1,144 @@
+{
+  "network": "studionet",
+  "contract": "0x71101772507a3Dc6fD4376Da2506b81b2187FFc9",
+  "result": "PASS",
+  "assertion": "all six finalized-error transactions left config and both terminal incident records byte-for-byte unchanged",
+  "before": {
+    "config": {
+      "access": "PERMISSIONLESS_PER_INCIDENT_TWO_WALLET",
+      "architecture": "ROLE_SEPARATED_INCIDENT_ATTESTATION",
+      "authority": "OPTIMISM_STATUS",
+      "history": "https://status.optimism.io/history/1",
+      "incident_count": 2,
+      "origin": "https://status.optimism.io",
+      "version": "ROLLUP_RELIEF_V3"
+    },
+    "positive": {
+      "affected_operation": "WRITE_INCLUSION",
+      "canonical_url": "https://status.optimism.io/en-us/cmrazrvph0am30rns9tzwb2oa",
+      "chain_key": "OP_MAINNET",
+      "content_digest": "7dda28ac2b43a8813b937d20bf5a49d6978eb48916c10ac1f26f6b11cfd547f0",
+      "impact_level": "MATERIAL",
+      "incident_id": "cmrazrvph0am30rns9tzwb2oa",
+      "incident_status": "RESOLVED",
+      "qualifies_for_relief": true,
+      "reason_code": "MATERIAL_WRITE_FAILURE_RESOLVED",
+      "reporter": "0xfed97e2ae1a8c1983b7ca206b3545e6a2c685e43",
+      "revision": 1,
+      "source_digest": "08d574bbe2b185e93f1bbc0f9c60eea82f6d4c46c108add1ee0692724805831f",
+      "state": "ATTESTED"
+    },
+    "negative": {
+      "affected_operation": "NONE",
+      "canonical_url": "https://status.optimism.io/en-us/cmthk6pbx0at41ms2q9i1iqlu",
+      "chain_key": "OP_MAINNET",
+      "content_digest": "6f84a242eacec61ae11c4f19e98e071cd26e26d7ad455e51916edaf6c75bbad2",
+      "impact_level": "NONE",
+      "incident_id": "cmthk6pbx0at41ms2q9i1iqlu",
+      "incident_status": "MAINTENANCE",
+      "qualifies_for_relief": false,
+      "reason_code": "NON_DISRUPTIVE_MAINTENANCE",
+      "reporter": "0xfed97e2ae1a8c1983b7ca206b3545e6a2c685e43",
+      "revision": 1,
+      "source_digest": "4c9e0ac7d42691c7ed8fc1020dd8d07ed77ef0f16134e68b538853b622afc6cb",
+      "state": "ATTESTED"
+    }
+  },
+  "after": {
+    "config": {
+      "access": "PERMISSIONLESS_PER_INCIDENT_TWO_WALLET",
+      "architecture": "ROLE_SEPARATED_INCIDENT_ATTESTATION",
+      "authority": "OPTIMISM_STATUS",
+      "history": "https://status.optimism.io/history/1",
+      "incident_count": 2,
+      "origin": "https://status.optimism.io",
+      "version": "ROLLUP_RELIEF_V3"
+    },
+    "positive": {
+      "affected_operation": "WRITE_INCLUSION",
+      "canonical_url": "https://status.optimism.io/en-us/cmrazrvph0am30rns9tzwb2oa",
+      "chain_key": "OP_MAINNET",
+      "content_digest": "7dda28ac2b43a8813b937d20bf5a49d6978eb48916c10ac1f26f6b11cfd547f0",
+      "impact_level": "MATERIAL",
+      "incident_id": "cmrazrvph0am30rns9tzwb2oa",
+      "incident_status": "RESOLVED",
+      "qualifies_for_relief": true,
+      "reason_code": "MATERIAL_WRITE_FAILURE_RESOLVED",
+      "reporter": "0xfed97e2ae1a8c1983b7ca206b3545e6a2c685e43",
+      "revision": 1,
+      "source_digest": "08d574bbe2b185e93f1bbc0f9c60eea82f6d4c46c108add1ee0692724805831f",
+      "state": "ATTESTED"
+    },
+    "negative": {
+      "affected_operation": "NONE",
+      "canonical_url": "https://status.optimism.io/en-us/cmthk6pbx0at41ms2q9i1iqlu",
+      "chain_key": "OP_MAINNET",
+      "content_digest": "6f84a242eacec61ae11c4f19e98e071cd26e26d7ad455e51916edaf6c75bbad2",
+      "impact_level": "NONE",
+      "incident_id": "cmthk6pbx0at41ms2q9i1iqlu",
+      "incident_status": "MAINTENANCE",
+      "qualifies_for_relief": false,
+      "reason_code": "NON_DISRUPTIVE_MAINTENANCE",
+      "reporter": "0xfed97e2ae1a8c1983b7ca206b3545e6a2c685e43",
+      "revision": 1,
+      "source_digest": "4c9e0ac7d42691c7ed8fc1020dd8d07ed77ef0f16134e68b538853b622afc6cb",
+      "state": "ATTESTED"
+    }
+  },
+  "transactions": [
+    {
+      "method": "assess_incident",
+      "tx": "0x7876f21ad191a2224d05f7d6b5581ba8acb242a1a84e7d27bdf42f4abc947270",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": true,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x7876f21ad191a2224d05f7d6b5581ba8acb242a1a84e7d27bdf42f4abc947270"
+    },
+    {
+      "method": "register_incident",
+      "tx": "0xe9ae399ad8efc7deaf6a56f0edbaf8d68cbcef1bc2f90fe39cf51813d361635e",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": true,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xe9ae399ad8efc7deaf6a56f0edbaf8d68cbcef1bc2f90fe39cf51813d361635e"
+    },
+    {
+      "method": "register_incident",
+      "tx": "0x6ad22a496b282d9c7380a4a8d13034daac97a7d1089ab47ab80eb5f2ec08bd87",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": true,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x6ad22a496b282d9c7380a4a8d13034daac97a7d1089ab47ab80eb5f2ec08bd87"
+    },
+    {
+      "method": "register_incident",
+      "tx": "0x224038e58e0648005e0d891d025adae3b298f73da7906ec69e0b6446a0662575",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": true,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x224038e58e0648005e0d891d025adae3b298f73da7906ec69e0b6446a0662575"
+    },
+    {
+      "method": "assess_incident",
+      "tx": "0xaf812c9dd74173c901d1212edcf0011090df0ec578230e3fbe6c03046a7e2fe5",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": true,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xaf812c9dd74173c901d1212edcf0011090df0ec578230e3fbe6c03046a7e2fe5"
+    },
+    {
+      "method": "assess_incident",
+      "tx": "0x4bb58938d080259d78eaefa292082b4b1b4a6b57a0d1d3f939c413330b77211c",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": true,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x4bb58938d080259d78eaefa292082b4b1b4a6b57a0d1d3f939c413330b77211c"
+    }
+  ]
+}

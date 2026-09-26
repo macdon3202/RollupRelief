@@ -1,0 +1,197 @@
+{
+  "network": "studionet",
+  "contract": "0x71101772507a3Dc6fD4376Da2506b81b2187FFc9",
+  "contract_explorer": "https://explorer-studio.genlayer.com/address/0x71101772507a3Dc6fD4376Da2506b81b2187FFc9",
+  "roles": {
+    "reporter_for_this_incident": "0xFeD97e2aE1A8C1983b7cA206B3545e6A2c685E43",
+    "independent_verifier": "0xc67532aeF9D2879cBA9375a02E6217A3524657B8",
+    "access": "permissionless; roles derive per incident"
+  },
+  "fixtures": {
+    "positive": {
+      "incident_id": "cmrazrvph0am30rns9tzwb2oa",
+      "chain": "OP_MAINNET",
+      "url": "https://status.optimism.io/en-us/cmrazrvph0am30rns9tzwb2oa",
+      "expected": "WRITE_INCLUSION/MATERIAL/true"
+    },
+    "negative": {
+      "incident_id": "cmthk6pbx0at41ms2q9i1iqlu",
+      "chain": "OP_MAINNET",
+      "url": "https://status.optimism.io/en-us/cmthk6pbx0at41ms2q9i1iqlu",
+      "expected": "MAINTENANCE/NONE/false"
+    },
+    "cross_check": "https://status.optimism.io/history/1"
+  },
+  "initial_config": {
+    "access": "PERMISSIONLESS_PER_INCIDENT_TWO_WALLET",
+    "architecture": "ROLE_SEPARATED_INCIDENT_ATTESTATION",
+    "authority": "OPTIMISM_STATUS",
+    "history": "https://status.optimism.io/history/1",
+    "incident_count": 0,
+    "origin": "https://status.optimism.io",
+    "version": "ROLLUP_RELIEF_V3"
+  },
+  "transactions": [
+    {
+      "method": "register_incident",
+      "tx": "0x4b643e1d398733f7ffc1b52427b29409d39f24a86fef53c0b434458414667270",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": false,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x4b643e1d398733f7ffc1b52427b29409d39f24a86fef53c0b434458414667270"
+    },
+    {
+      "method": "assess_incident",
+      "tx": "0x659e916f8826a02d7fb54aa8fab448fb8e3774f509f0497ae6c23b267206f41d",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": true,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x659e916f8826a02d7fb54aa8fab448fb8e3774f509f0497ae6c23b267206f41d"
+    },
+    {
+      "method": "register_incident",
+      "tx": "0xb8c37ee92a0ad9568d14904691edc18d80985b21e816f4c6f9cdc69992607c97",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": true,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xb8c37ee92a0ad9568d14904691edc18d80985b21e816f4c6f9cdc69992607c97"
+    },
+    {
+      "method": "assess_incident",
+      "tx": "0xa2e1df954ad4436a80cfc9874b24f71322a9976050b6fd2c142a658ce7a62fb6",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": false,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xa2e1df954ad4436a80cfc9874b24f71322a9976050b6fd2c142a658ce7a62fb6"
+    },
+    {
+      "method": "assess_incident",
+      "tx": "0x4bfe115260a90b989464d1e5cc2042ac8fc0295a60e59fa95d26bac81a2ed2f7",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": true,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x4bfe115260a90b989464d1e5cc2042ac8fc0295a60e59fa95d26bac81a2ed2f7"
+    },
+    {
+      "method": "register_incident",
+      "tx": "0x935d263052b1a6cc0ecbf59bf16e0fca9b610cfbf6512cc52b3fe03d91750951",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": false,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x935d263052b1a6cc0ecbf59bf16e0fca9b610cfbf6512cc52b3fe03d91750951"
+    },
+    {
+      "method": "assess_incident",
+      "tx": "0x88c3137d1503a70b198d6dd99d6bb598f0c37bdfe5a101c63c69dc298dc1c2fa",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error": false,
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x88c3137d1503a70b198d6dd99d6bb598f0c37bdfe5a101c63c69dc298dc1c2fa"
+    }
+  ],
+  "readbacks": {
+    "registered": {
+      "affected_operation": "",
+      "canonical_url": "https://status.optimism.io/en-us/cmrazrvph0am30rns9tzwb2oa",
+      "chain_key": "OP_MAINNET",
+      "content_digest": "",
+      "impact_level": "",
+      "incident_id": "cmrazrvph0am30rns9tzwb2oa",
+      "incident_status": "",
+      "qualifies_for_relief": false,
+      "reason_code": "",
+      "reporter": "0xfed97e2ae1a8c1983b7ca206b3545e6a2c685e43",
+      "revision": 0,
+      "source_digest": "",
+      "state": "REGISTERED"
+    },
+    "assessed": {
+      "affected_operation": "WRITE_INCLUSION",
+      "canonical_url": "https://status.optimism.io/en-us/cmrazrvph0am30rns9tzwb2oa",
+      "chain_key": "OP_MAINNET",
+      "content_digest": "7dda28ac2b43a8813b937d20bf5a49d6978eb48916c10ac1f26f6b11cfd547f0",
+      "impact_level": "MATERIAL",
+      "incident_id": "cmrazrvph0am30rns9tzwb2oa",
+      "incident_status": "RESOLVED",
+      "qualifies_for_relief": true,
+      "reason_code": "MATERIAL_WRITE_FAILURE_RESOLVED",
+      "reporter": "0xfed97e2ae1a8c1983b7ca206b3545e6a2c685e43",
+      "revision": 1,
+      "source_digest": "08d574bbe2b185e93f1bbc0f9c60eea82f6d4c46c108add1ee0692724805831f",
+      "state": "ATTESTED"
+    },
+    "attestation_1": {
+      "affected_operation": "WRITE_INCLUSION",
+      "content_digest": "7dda28ac2b43a8813b937d20bf5a49d6978eb48916c10ac1f26f6b11cfd547f0",
+      "impact_level": "MATERIAL",
+      "incident_id": "cmrazrvph0am30rns9tzwb2oa",
+      "incident_status": "RESOLVED",
+      "qualifies_for_relief": true,
+      "reason_code": "MATERIAL_WRITE_FAILURE_RESOLVED",
+      "revision": 1,
+      "source_binding": "MATCH",
+      "source_digest": "08d574bbe2b185e93f1bbc0f9c60eea82f6d4c46c108add1ee0692724805831f",
+      "verifier": "0xc67532aef9d2879cba9375a02e6217a3524657b8"
+    },
+    "negative_registered": {
+      "affected_operation": "",
+      "canonical_url": "https://status.optimism.io/en-us/cmthk6pbx0at41ms2q9i1iqlu",
+      "chain_key": "OP_MAINNET",
+      "content_digest": "",
+      "impact_level": "",
+      "incident_id": "cmthk6pbx0at41ms2q9i1iqlu",
+      "incident_status": "",
+      "qualifies_for_relief": false,
+      "reason_code": "",
+      "reporter": "0xfed97e2ae1a8c1983b7ca206b3545e6a2c685e43",
+      "revision": 0,
+      "source_digest": "",
+      "state": "REGISTERED"
+    },
+    "negative_assessed_revision_1": {
+      "affected_operation": "NONE",
+      "canonical_url": "https://status.optimism.io/en-us/cmthk6pbx0at41ms2q9i1iqlu",
+      "chain_key": "OP_MAINNET",
+      "content_digest": "6f84a242eacec61ae11c4f19e98e071cd26e26d7ad455e51916edaf6c75bbad2",
+      "impact_level": "NONE",
+      "incident_id": "cmthk6pbx0at41ms2q9i1iqlu",
+      "incident_status": "MAINTENANCE",
+      "qualifies_for_relief": false,
+      "reason_code": "NON_DISRUPTIVE_MAINTENANCE",
+      "reporter": "0xfed97e2ae1a8c1983b7ca206b3545e6a2c685e43",
+      "revision": 1,
+      "source_digest": "4c9e0ac7d42691c7ed8fc1020dd8d07ed77ef0f16134e68b538853b622afc6cb",
+      "state": "ATTESTED"
+    },
+    "negative_attestation_1": {
+      "affected_operation": "NONE",
+      "content_digest": "6f84a242eacec61ae11c4f19e98e071cd26e26d7ad455e51916edaf6c75bbad2",
+      "impact_level": "NONE",
+      "incident_id": "cmthk6pbx0at41ms2q9i1iqlu",
+      "incident_status": "MAINTENANCE",
+      "qualifies_for_relief": false,
+      "reason_code": "NON_DISRUPTIVE_MAINTENANCE",
+      "revision": 1,
+      "source_binding": "MATCH",
+      "source_digest": "4c9e0ac7d42691c7ed8fc1020dd8d07ed77ef0f16134e68b538853b622afc6cb",
+      "verifier": "0xc67532aef9d2879cba9375a02e6217a3524657b8"
+    }
+  },
+  "final_config": {
+    "access": "PERMISSIONLESS_PER_INCIDENT_TWO_WALLET",
+    "architecture": "ROLE_SEPARATED_INCIDENT_ATTESTATION",
+    "authority": "OPTIMISM_STATUS",
+    "history": "https://status.optimism.io/history/1",
+    "incident_count": 2,
+    "origin": "https://status.optimism.io",
+    "version": "ROLLUP_RELIEF_V3"
+  },
+  "result": "PASS"
+}
