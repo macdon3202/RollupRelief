@@ -2,6 +2,9 @@
 
 Status: `STUDIONET_V3_VERIFIED` at [`0x71101772507a3Dc6fD4376Da2506b81b2187FFc9`](https://explorer-studio.genlayer.com/address/0x71101772507a3Dc6fD4376Da2506b81b2187FFc9). See [`STUDIONET_V3_E2E.md`](STUDIONET_V3_E2E.md).
 
+Production frontend: [https://rollup-relief.pages.dev](https://rollup-relief.pages.dev)  
+Cloudflare deployment: [5eddb555.rollup-relief.pages.dev](https://5eddb555.rollup-relief.pages.dev)
+
 ## Permissionless role boundary
 
 Deploy with **no constructor arguments**. The contract stores no owner, administrator or globally privileged reporter/verifier.

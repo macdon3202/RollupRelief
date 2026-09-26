@@ -3,6 +3,8 @@
 Date: 2026-09-26 (Asia/Bangkok)  
 Result: **PASS**
 
+Live frontend: [https://rollup-relief.pages.dev](https://rollup-relief.pages.dev). The production alias was opened after deployment and re-read the positive terminal record, incident count, revision and both digests from Studionet successfully.
+
 ## Release identity
 
 - Contract: [`0x71101772507a3Dc6fD4376Da2506b81b2187FFc9`](https://explorer-studio.genlayer.com/address/0x71101772507a3Dc6fD4376Da2506b81b2187FFc9)

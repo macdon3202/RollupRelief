@@ -2,6 +2,8 @@
 
 RollupRelief is a GenLayer dApp that turns official L2 incident narratives into bounded, replay-protected on-chain attestations for deadline-relief decisions.
 
+Live dApp: [https://rollup-relief.pages.dev](https://rollup-relief.pages.dev)
+
 It answers one narrow question: **did an official Optimism incident materially prevent transaction inclusion, or was it only read degradation / non-disruptive maintenance?** It does not claim that a particular user attempted a transaction.
 
 ## Architecture
@@ -43,6 +45,8 @@ npm run build
 ## Release status
 
 `STUDIONET_V3_VERIFIED`. Contract: [`0x71101772507a3Dc6fD4376Da2506b81b2187FFc9`](https://explorer-studio.genlayer.com/address/0x71101772507a3Dc6fD4376Da2506b81b2187FFc9). Core, negative, conflict and adversarial suites all passed with finalized majority consensus, and frontend readbacks match the terminal state after reload.
+
+Cloudflare Pages production: [rollup-relief.pages.dev](https://rollup-relief.pages.dev). Verified against the V3 contract after deployment.
 
 Verified locally: **11 Direct Mode tests** (including `UNRESOLVED` recovery with preserved revisions), GenVM lint/validation **PASS**, **5 frontend transaction-state tests**, and Vite production build **PASS**.
 
