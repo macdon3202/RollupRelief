@@ -4,6 +4,9 @@ RollupRelief is a GenLayer dApp that turns official L2 incident narratives into 
 
 Live dApp: [https://rollup-relief.pages.dev](https://rollup-relief.pages.dev)
 
+For submission reviewers, all public URLs and reproducible fixture IDs are
+collected in [REVIEW_LINKS.md](REVIEW_LINKS.md).
+
 It answers one narrow question: **did an official Optimism incident materially prevent transaction inclusion, or was it only read degradation / non-disruptive maintenance?** It does not claim that a particular user attempted a transaction.
 
 ## Architecture
