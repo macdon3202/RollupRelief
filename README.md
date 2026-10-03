@@ -51,6 +51,6 @@ npm run build
 
 Cloudflare Pages production: [rollup-relief.pages.dev](https://rollup-relief.pages.dev). Verified against the V3 contract after deployment.
 
-Verified locally: **11 Direct Mode tests** (including `UNRESOLVED` recovery with preserved revisions), GenVM lint/validation **PASS**, **5 frontend transaction-state tests**, and Vite production build **PASS**.
+Verified locally: **11 Direct Mode tests** (including `UNRESOLVED` recovery with preserved revisions), GenVM lint/validation **PASS**, **7 frontend transaction/workflow tests**, and Vite production build **PASS**. The live UI includes an explicit reporter-to-verifier account handoff.
 
-See [complete V3 Studionet evidence](docs/STUDIONET_V3_E2E.md), [test resources](docs/TEST_RESOURCE_MANIFEST.md), [test matrix](docs/TEST_MATRIX.md), [local verification](docs/LOCAL_VERIFICATION.md), and [deployment procedure](docs/DEPLOYMENT.md).
+See [frontend two-wallet proof](docs/FRONTEND_TWO_WALLET_E2E.md), [complete V3 Studionet evidence](docs/STUDIONET_V3_E2E.md), [test resources](docs/TEST_RESOURCE_MANIFEST.md), [test matrix](docs/TEST_MATRIX.md), [local verification](docs/LOCAL_VERIFICATION.md), and [deployment procedure](docs/DEPLOYMENT.md).

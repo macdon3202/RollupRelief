@@ -14,5 +14,7 @@
 | Cross-object digest replay rejected | required | expected-error tx |
 | Terminal replay rejected, no mutation | required | expected-error tx + readback |
 | Frontend waits for final result then re-reads | node test | production signed write + reload |
+| Frontend can hand off from reporter account A to verifier account B | state-machine test | live role-separated transactions + guided wallet switch |
+| Reporter assessment stays disabled across address casing | state-machine test | reporter self-assessment expected-error transaction |
 
 Every rejected live call must include complete relevant pre/post readback proving no mutation.

@@ -50,7 +50,7 @@ The production-configured frontend was loaded against this address and synchroni
 - Positive UI: `ATTESTED`, `WRITE_INCLUSION`, `MATERIAL`, `QUALIFIES`, revision `1`, with the exact on-chain digests.
 - Negative UI: `ATTESTED`, `NONE`, `NONE`, `DOES NOT QUALIFY`, reason `NON_DISRUPTIVE_MAINTENANCE`, revision `1`, with the exact on-chain digests.
 - Header readback: incident count `2` and the correct V3 contract Explorer link.
-- Transaction reconciliation only reports success at `FINALIZED`; `ACCEPTED` remains pending and `UNDETERMINED` is surfaced as failure. Five frontend transaction-state tests pass.
+- Transaction reconciliation only reports success at `FINALIZED`; `ACCEPTED` remains pending and `UNDETERMINED` is surfaced as failure. Seven frontend tests pass, including the complete reporter → wallet switch → independent verifier state machine and case-insensitive role enforcement. See [`FRONTEND_TWO_WALLET_E2E.md`](FRONTEND_TWO_WALLET_E2E.md).
 
 Machine-readable records: [`studionet-e2e.json`](studionet-e2e.json) and [`studionet-adversarial.json`](studionet-adversarial.json).
 

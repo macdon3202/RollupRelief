@@ -1,0 +1,10 @@
+.handoff{margin:42px 0 0;background:#fff4f4;border:1px solid #f4b7bb;border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr 1.4fr;gap:24px}
+.handoff h2{font-size:32px;margin:10px 0}.handoff p{color:#666;line-height:1.5}
+.handoff-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.handoff-steps article{background:white;border:1px solid #ddd;border-radius:14px;padding:14px;display:flex;gap:10px;align-items:center}
+.handoff-steps article>span{font:700 12px 'Space Mono';color:#ef3340}.handoff-steps b,.handoff-steps small{display:block}
+.handoff-steps small{font:10px 'Space Mono';color:#777;margin-top:4px}.handoff-steps .done,.handoff-steps .ready{border-color:#55b98c;background:#f2fff8}
+.handoff-steps .action{border-color:#ef3340;background:#fff}.identity{grid-column:1/-1;display:flex;gap:12px}
+.identity span{background:#18181b;color:#aaa;border-radius:12px;padding:12px 16px;flex:1}.identity b{display:block;color:white;margin-top:4px;font-family:'Space Mono'}
+.handoff>button{grid-column:1/-1}
+@media(max-width:900px){.handoff{grid-template-columns:1fr}.handoff-steps{grid-template-columns:1fr 1fr}.identity{grid-column:auto;flex-direction:column}.handoff>button{grid-column:auto}}
